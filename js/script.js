@@ -10,7 +10,7 @@
 
 // seletores.forEach((Item)=>{
 
-//     if(Item.textContent == "Item-15") {
+//     if (Item.textContent == "Item-15") {
 //         let meuItem = Item;
 //         console.log(`Items selecionados : ${meuItem.textContent}`);
 //         meuItem.textContent = "TÁ DOMINADO!!"
