@@ -18,9 +18,31 @@
 // })
 // console.log(seletores);
 
+//Para estudar
 //SetTimeOut
 //SetInterval
 //Random
 //Math.Ceil
 //Math.Random
 //Math.Floor
+
+let tmp = ""
+
+function mudarCor() {
+    
+    let r = 0;
+    let g = 0;
+    let b = 0;
+
+    r = Math.round(Math.random() * 255);
+    g = Math.round(Math.random() * 255);
+    b = Math.round(Math.random() * 255);
+
+    const cabecalho = document.querySelector(".cabecalho");
+    
+    cabecalho.style.backgroundColor = `rgb(${r},${g},${b})`;
+
+    tmp = setTimeout(mudarCor, 1000);
+}
+
+mudarCor();
