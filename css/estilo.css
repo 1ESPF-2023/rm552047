@@ -10,7 +10,7 @@
 
 .container{
     display: flex;
-    height: 60vh;
+    height: auto;
 }
 
 .banner-1{
