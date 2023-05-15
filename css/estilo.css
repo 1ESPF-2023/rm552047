@@ -11,6 +11,9 @@
 .container{
     display: flex;
     height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-1{
