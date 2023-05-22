@@ -37,7 +37,8 @@ addEventListener("click", (evt)=> {
             
     const labelUser = document.querySelector("label[for='idUser']");
     const labelPass = document.querySelector("label[for='idPass']");
-
+    
+    const msgStatus = document.querySelector("#msg")
         //Recupeerar o conteúdo dos campos e adicionar em um OBJETO
     const usuarioLogado = {
         nomeUsuárioLogado : inputUser.value,
@@ -53,9 +54,11 @@ addEventListener("click", (evt)=> {
             labelPass.setAttribute("style", "color:#00ff00;");
 
             if(usuarioLogado.nomeUsuárioLogado == "tutu" && usuarioLogado.senhaUsuárioLogado == "123456"){
-               alert("VALIDADO!");
+              msgStatus.setAttribute("style", "color:#00ff00;")
+              msgStatus.innerHTML = "<span><strong>Login efetuado com Sucesso!!</strong></span>" 
             }else{
-               alert("NÃO VALIDADO!");
+              msgStatus.setAttribute("style", "color:#ff0000;")
+              msgStatus.innerHTML = "<span><strong>Login ou senha incorretos</strong></span>"
             }
             
         }else{
