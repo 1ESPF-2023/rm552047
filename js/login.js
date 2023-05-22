@@ -44,7 +44,7 @@ addEventListener("click", (evt)=> {
         nomeUsuárioLogado : inputUser.value,
         senhaUsuárioLogado : inputPass.value,
     }    
-    if(evt.target.id == "btnSubmit") {
+    if(evt.target.id == "btnSubmit"){
     
         if(inputUser.value.length > 3 && inputPass.value.length > 3){
             // inputUser.setAttribute("style", "outline-color:#00ff00;")
@@ -58,7 +58,7 @@ addEventListener("click", (evt)=> {
               msgStatus.innerHTML = "<span><strong>Login efetuado com Sucesso!!</strong></span>" 
             }else{
               msgStatus.setAttribute("style", "color:#ff0000;")
-              msgStatus.innerHTML = "<span><strong>Login ou senha incorretos</strong></span>"
+              msgStatus.innerHTML = "<span><strong>Login ou senha incorretos...</strong></span>"
             }
             
         }else{
